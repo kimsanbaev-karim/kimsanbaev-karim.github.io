@@ -31,6 +31,16 @@
     font: 16px/1.55 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
   main { max-width: 46rem; margin: 0 auto; }
+  .intro { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
+  .intro img {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--rule);
+    flex-shrink: 0;
+  }
+  .intro-text { min-width: 0; flex: 1 1 18rem; }
   h1 { font-size: 1.75rem; margin: 0 0 .25rem; }
   .role { color: var(--muted); font-size: 1.05rem; margin: 0 0 1rem; }
   .contacts { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; margin: 0 0 1.25rem; padding: 0; list-style: none; }
@@ -68,8 +78,13 @@
 </head>
 <body>
 <main>
-  <h1>Karim Kimsanbaev</h1>
-  <p class="role">Senior Unity Developer at Helio Games — Bishkek, Kyrgyzstan</p>
+  <div class="intro">
+    <img src="avatar.jpg" width="460" height="460" alt="Karim Kimsanbaev">
+    <div class="intro-text">
+      <h1>Karim Kimsanbaev</h1>
+      <p class="role">Senior Unity Developer at Helio Games — Bishkek, Kyrgyzstan</p>
+    </div>
+  </div>
 
   <ul class="contacts">
     <li><a href="mailto:karim.kimsanbaev@gmail.com">karim.kimsanbaev@gmail.com</a></li>
