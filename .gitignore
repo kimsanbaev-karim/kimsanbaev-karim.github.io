@@ -1,0 +1,7 @@
+out/
+*.pdf
+
+cv/overleaf-original/
+
+.DS_Store
+Thumbs.db
