@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Карим Кимсанбаев — senior-инженер Unity и .NET</title>
+<meta name="description" content="Карим Кимсанбаев — senior-инженер Unity и .NET в Helio Games. Миграции легаси-движков, продакшн-архитектура, ИИ-агенты в конвейере разработки.">
+<link rel="canonical" href="https://kimsanbaev-karim.github.io/ru.html">
+<link rel="alternate" hreflang="en" href="https://kimsanbaev-karim.github.io/">
+<link rel="alternate" hreflang="ru" href="https://kimsanbaev-karim.github.io/ru.html">
+<link rel="alternate" hreflang="x-default" href="https://kimsanbaev-karim.github.io/">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <nav class="lang"><a href="index.html">English</a></nav>
+
+  <div class="intro">
+    <img src="avatar.jpg" width="460" height="460" alt="Карим Кимсанбаев">
+    <div class="intro-text">
+      <h1>Карим Кимсанбаев</h1>
+      <p class="role">Senior-инженер Unity и .NET · Helio Games · Бишкек, Кыргызстан</p>
+    </div>
+  </div>
+
+  <ul class="contacts">
+    <li><a href="mailto:karim.kimsanbaev@gmail.com">karim.kimsanbaev@gmail.com</a></li>
+    <li><a href="https://t.me/KarimGood">Telegram @KarimGood</a></li>
+    <li><a href="https://www.linkedin.com/in/karim-kimsanbaev-013851203/">LinkedIn</a></li>
+    <li><a href="https://github.com/kimsanbaev-karim">GitHub</a></li>
+  </ul>
+
+  <p class="summary">Игровой инженер, 6+ лет в одной студии: мобильные и PC-проекты на C# и Unity плюс .NET-сервисы под ними. Зовут за три вещи — двигать легаси-движок вперёд, не останавливая продукт; превращать прототипы в архитектуру, которая держит тесты; и ставить ИИ-агентов на реальную работу в конвейере разработки.</p>
+
+  <a class="download" href="cv.pdf">Скачать резюме (PDF, английский)</a>
+
+  <h2>Опыт</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <strong>Helio Games</strong>
+      <span class="entry-meta">Лимасол, Кипр</span>
+    </div>
+    <div class="entry-sub">Senior Programmer с июля 2025 (Middle 2021–2025, Junior 2020–2021) · июль 2020 – настоящее время</div>
+    <ul class="bullets">
+      <li><strong>Миграция легаси-движка</strong>: перевёл живой Unity-клиент с 2017 на Unity 6.3 шестью LTS-этапами; каждый закрыт тегом-чекпоинтом и проверен компиляцией, боем 5v5, standalone-билдом и сборкой ассет-бандлов. По пути обойдена бага Unity 6 VideoPlayer, из-за которой первое воспроизведение девять секунд стояло на месте.</li>
+      <li><strong>Прототип в продакшн-архитектуру</strong>: разложил режим из 343 файлов на слоистые сборки — тесты 98 → 289 EditMode плюс 14 сквозных PlayMode, ScriptableObject-конфиги 29 → 0 (перешли на JSON), изменяемые статики 9 → 0 (DI-реестр), крупнейшая система 1665 → 780 строк. Выбрал рефакторинг на месте после того, как полное переписывание оказалось медленнее.</li>
+      <li><strong>Бэкенд мета-слоя с нуля</strong>: сервис на MagicOnion StreamingHub, MongoDB и .NET Aspire — JWT access и refresh с хранением только хешей токенов, Steam как провайдер авторизации, разграничение прав по ролям, heartbeat с авто-реконнектом, замер потерь пакетов под нагрузкой.</li>
+      <li><strong>Диагностика инцидента на проде</strong>: по 46 клиентским сессиям и 2 краш-дампам нашёл корень амплификации DDoS в слое RUDP (O(n)-скан на каждый неизвестный пакет плюс лог на каждый пакет), убрал оба за флагом failover и счётчиками, закрыл 5 регрессионными тестами.</li>
+      <li><strong>Фичи и платформы</strong>: довёл до релиза 15+ фич, включая батл-пасс в нескольких проектах; интегрировал Firebase, AppsFlyer, Pushwoosh, Unity IAP и Xsolla; снизил потребление памяти на 30% и CPU на 20% за счёт allocation-free паттернов.</li>
+      <li><strong>Менторство</strong>: провёл мид-программиста через испытательный срок и научил команду писать allocation-free код, задокументировав пайплайн работы с ассетами, по которому она работает.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <strong>Nival</strong>
+      <span class="entry-meta">Санкт-Петербург, Россия</span>
+    </div>
+    <div class="entry-sub">Junior Game Designer · январь 2019 – июль 2020</div>
+    <ul class="bullets">
+      <li><strong>Контентные системы</strong>: довёл до релиза 10+ типов башен с разными механиками в tower-defense проекте и написал техзадания, по которым работали художники и программисты.</li>
+      <li><strong>Опенсорс и сообщество</strong>: выпустил 2 проекта компании в открытый доступ, собрал команду энтузиастов и запустил 2 сообществом поддерживаемых игровых сервера.</li>
+    </ul>
+  </div>
+
+  <h2>Избранные проекты</h2>
+  <ul class="bullets">
+    <li><strong>Платформа управления ИИ-работой</strong>: заменил учёт задач в таблице локальной платформой — ASP.NET Core (.NET 10), Blazor WASM PWA, MongoDB, собственный MCP-сервер на 13 инструментов и оркестрация в n8n со своей нодой для шагов агента. MVP за одну сессию при 41/41 юнит-тестов, работоспособность подтверждена задачей, прошедшей весь конвейер целиком.</li>
+    <li><strong>RAG-помощник для абитуриентов</strong>: с нуля до задеплоенного сервиса за 10 дней — корпус на 700 чанков по двум доменам, Chroma с fastembed и LLM-судья релевантности вместо хрупкого порога 0,52; деплой под systemd после того, как Docker упал по OOM на машине с 961 МБ памяти.</li>
+    <li><strong>Telegram-бот тренировки общения</strong>: работает в проде, аналитика построена с нуля — 0 → 374 события за 35 дней от 12 пользователей, завершаемость диалогов 88%, 295 проходящих тестов.</li>
+    <li><strong>Prime World в опенсорсе</strong>: опубликовал кодовую базу MOBA 2014 года — проверил лицензии компонентов и вычистил проприетарные вендорские SDK из всей истории git, а не только из текущего состояния: <a href="https://github.com/kimsanbaev-karim/Prime-World">github.com/kimsanbaev-karim/Prime-World</a>.</li>
+    <li><strong>Выпущенные проекты</strong>: <a href="https://apps.apple.com/us/app/mutiny-pirate-survival-rpg/id1490838880">Mutiny: Pirate Survival</a>, <a href="https://heliogames.com/westland-survival">Westland Survival</a>, <a href="https://apps.apple.com/us/app/amikin-village-magic-sim-rpg/id6478102304">Amikin Village</a>, <a href="https://store.steampowered.com/app/235340/Prime_World/">Prime World</a>, <a href="https://store.steampowered.com/app/429540/Prime_World_Defenders_2/">Prime World: Defenders 2</a>.</li>
+  </ul>
+
+  <h2>Образование</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <strong>БГТУ «ВОЕНМЕХ» им. Д. Ф. Устинова</strong>
+      <span class="entry-meta">Санкт-Петербург, Россия</span>
+    </div>
+    <div class="entry-sub">Аспирантура, системный анализ; средний балл 4,76 · сентябрь 2022 – октябрь 2025</div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <strong>БГТУ «ВОЕНМЕХ» им. Д. Ф. Устинова</strong>
+      <span class="entry-meta">Санкт-Петербург, Россия</span>
+    </div>
+    <div class="entry-sub">Магистратура, программная инженерия; средний балл 4,88 · сентябрь 2019 – август 2021</div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <strong>БГТУ «ВОЕНМЕХ» им. Д. Ф. Устинова</strong>
+      <span class="entry-meta">Санкт-Петербург, Россия</span>
+    </div>
+    <div class="entry-sub">Бакалавриат, программная инженерия; средний балл 4,68 · сентябрь 2015 – август 2019</div>
+  </div>
+
+  <p class="note">Статья о методах оценки качества распознавания ситуаций принята к публикации (2027).</p>
+
+  <h2>Навыки</h2>
+  <div class="skills">
+    <p><strong>Языки</strong>: C#, Python, SQL</p>
+    <p><strong>Геймдев</strong>: Unity, DoTween, Unity IAP, NoesisGUI, пайплайны ассетов, IL2CPP</p>
+    <p><strong>Бэкенд</strong>: ASP.NET Core, Blazor, MagicOnion/gRPC, MongoDB, .NET Aspire, Docker</p>
+    <p><strong>ИИ-инструменты</strong>: агенты Claude Code, MCP-серверы, RAG, n8n</p>
+  </div>
+
+  <footer>Собрано из исходника Typst и опубликовано через GitHub Actions.</footer>
+</main>
+</body>
+</html>
