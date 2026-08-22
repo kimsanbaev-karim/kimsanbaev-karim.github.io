@@ -1,0 +1,93 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #5c5c5c;
+  --rule: #d4d4d4;
+  --accent: #1d4ed8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14161a;
+    --fg: #e8e8e8;
+    --muted: #a0a4ad;
+    --rule: #333842;
+    --accent: #7aa2ff;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 2rem 1.25rem 4rem;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.55 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+main { max-width: 46rem; margin: 0 auto; }
+
+.lang { margin-bottom: 1rem; text-align: right; font-size: .9rem; }
+.lang a { color: var(--accent); text-decoration: none; }
+.lang a:hover { text-decoration: underline; }
+
+.intro { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
+
+.intro img {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  flex-shrink: 0;
+}
+
+.intro-text { min-width: 0; flex: 1 1 18rem; }
+
+h1 { font-size: 1.75rem; margin: 0 0 .25rem; }
+.role { color: var(--muted); font-size: 1.05rem; margin: 0; }
+
+.contacts { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; margin: 0 0 1.25rem; padding: 0; list-style: none; }
+.contacts a { color: var(--accent); text-decoration: none; }
+.contacts a:hover { text-decoration: underline; }
+
+.summary { margin: 0 0 1.5rem; }
+
+.download {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: .55rem 1.1rem;
+  border: 1px solid var(--accent);
+  border-radius: .4rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.download:hover { background: var(--accent); color: var(--bg); }
+
+h2 {
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin: 2rem 0 .5rem;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.entry { margin: 0 0 1.25rem; }
+.entry-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem; }
+.entry-head strong { font-size: 1rem; }
+.entry-meta { color: var(--muted); font-size: .9rem; }
+.entry-sub { color: var(--muted); font-size: .92rem; font-style: italic; }
+
+ul.bullets { margin: .5rem 0 0; padding-left: 1.15rem; }
+ul.bullets li { margin-bottom: .4rem; }
+
+.skills p { margin: .25rem 0; }
+.note { color: var(--muted); font-size: .95rem; }
+
+a { color: var(--accent); }
+
+footer { margin-top: 3rem; color: var(--muted); font-size: .85rem; }
