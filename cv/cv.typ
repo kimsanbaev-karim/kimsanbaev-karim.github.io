@@ -82,7 +82,7 @@ into architecture that holds tests, and putting AI agents to real work in a deli
 
 #subheading(
   [BSTU "VOENMEH"], [Saint-Petersburg, Russia],
-  [PhD programme, Systems Analysis; GPA 4.76], [Sep 2022 -- Oct 2025],
+  [PhD programme, Systems Analysis (thesis in progress); GPA 4.76], [Sep 2022 -- Oct 2025],
 )
 #subheading(
   [BSTU "VOENMEH"], [Saint-Petersburg, Russia],
