@@ -37,9 +37,9 @@
 
 #v(4pt)
 
-Игровой инженер, 6+ лет в одной студии: мобильные и PC-проекты на C\# и Unity плюс .NET-сервисы под ними. Зовут за
-три вещи — двигать легаси-движок, не останавливая продукт; превращать прототипы в архитектуру, которая держит
-тесты; ставить ИИ-агентов на реальную работу в конвейере.
+Игровой инженер, 7+ лет в индустрии, из них 6 в одной студии: мобильные и PC-проекты на C\# и Unity плюс
+.NET-сервисы под ними. Зовут за три вещи — двигать легаси-движок, не останавливая продукт; превращать прототипы
+в архитектуру, которая держит тесты; ставить ИИ-агентов на реальную работу в конвейере.
 
 #rule-section("Опыт")
 
@@ -74,8 +74,20 @@
   item("Платформа управления ИИ-работой")[Заменил учёт задач в таблице локальной платформой: ASP.NET Core (.NET 10), Blazor WASM PWA, MongoDB, собственный MCP-сервер на 13 инструментов и оркестрация в n8n со своей нодой для шагов агента. MVP за одну сессию при 41/41 юнит-тестов, подтверждено задачей, прошедшей весь конвейер целиком.],
   item("RAG-помощник для абитуриентов")[С нуля до задеплоенного сервиса за 10 дней: корпус на 700 чанков по двум доменам, Chroma с fastembed и LLM-судья релевантности вместо хрупкого порога 0,52; деплой под systemd после того, как Docker упал по OOM на машине с 961 МБ памяти.],
   item("Telegram-бот тренировки общения")[Работает в проде, аналитика построена с нуля: 0 #sym.arrow 374 события за 35 дней от 12 пользователей, завершаемость диалогов 88%, 295 проходящих тестов.],
-  item("Prime World в опенсорсе")[Опубликовал кодовую базу MOBA 2014 года: проверил лицензии компонентов и вычистил проприетарные вендорские SDK из всей истории git, а не только из текущего состояния #sym.dash.en #link("https://github.com/kimsanbaev-karim/Prime-World")[github.com/kimsanbaev-karim/Prime-World].],
-  item("Выпущенные проекты")[#link("https://apps.apple.com/us/app/mutiny-pirate-survival-rpg/id1490838880")[Mutiny: Pirate Survival], #link("https://heliogames.com/westland-survival")[Westland Survival], #link("https://apps.apple.com/us/app/amikin-village-magic-sim-rpg/id6478102304")[Amikin Village], #link("https://store.steampowered.com/app/235340/Prime_World/")[Prime World], #link("https://store.steampowered.com/app/429540/Prime_World_Defenders_2/")[Prime World: Defenders 2].],
+  item("Prime World в опенсорсе")[Опубликовал кодовую базу MOBA 2014 года: проверил лицензии компонентов и вычистил проприетарные вендорские SDK из всей истории git, а не только из текущего состояния #sym.dash.en github.com/kimsanbaev-karim/Prime-World.],
+  item("Выпущенные проекты")[Mutiny: Pirate Survival, Westland Survival, Amikin Village, Prime World, Prime World: Defenders 2.],
+)
+
+#rule-section("Навыки")
+
+#grid(
+  columns: (auto, 1fr),
+  row-gutter: 3pt,
+  column-gutter: 8pt,
+  strong[Языки], [C\#, Python, SQL],
+  strong[Геймдев], [Unity, DoTween, Unity IAP, NoesisGUI, пайплайны ассетов, IL2CPP],
+  strong[Бэкенд], [ASP.NET Core, Blazor, MagicOnion/gRPC, MongoDB, .NET Aspire, Docker],
+  strong[ИИ-инструменты], [агенты Claude Code, MCP-серверы, RAG, n8n],
 )
 
 #rule-section("Образование")
@@ -95,15 +107,3 @@
 
 #v(3pt)
 Статья о методах оценки качества распознавания ситуаций принята к публикации (2027).
-
-#rule-section("Навыки")
-
-#grid(
-  columns: (auto, 1fr),
-  row-gutter: 3pt,
-  column-gutter: 8pt,
-  strong[Языки], [C\#, Python, SQL],
-  strong[Геймдев], [Unity, DoTween, Unity IAP, NoesisGUI, пайплайны ассетов, IL2CPP],
-  strong[Бэкенд], [ASP.NET Core, Blazor, MagicOnion/gRPC, MongoDB, .NET Aspire, Docker],
-  strong[ИИ-инструменты], [агенты Claude Code, MCP-серверы, RAG, n8n],
-)

@@ -32,8 +32,8 @@ jobs:
 
       - name: Compile PDFs
         run: |
-          typst compile cv/cv.typ _site/cv.pdf
-          typst compile cv/cv-ru.typ _site/cv-ru.pdf
+          typst compile cv/cv.typ _site/Karim_Kimsanbaev_CV.pdf
+          typst compile cv/cv-ru.typ _site/Karim_Kimsanbaev_CV_RU.pdf
 
       - uses: actions/upload-pages-artifact@v5
         with:
