@@ -37,9 +37,10 @@
 
 #v(4pt)
 
-Game engineer with 6+ years at one studio: mobile and PC titles in C\# and Unity plus the .NET services behind
-them. Hired for three things — moving legacy engines forward without stopping the product, turning prototypes
-into architecture that holds tests, and putting AI agents to real work in a delivery pipeline.
+Game engineer with 7+ years in the industry, 6 of them at one studio: mobile and PC titles in C\# and Unity plus
+the .NET services behind them. Hired for three things — moving legacy engines forward without stopping the
+product, turning prototypes into architecture that holds tests, and putting AI agents to real work in a delivery
+pipeline.
 
 #rule-section("Experience")
 
@@ -74,8 +75,20 @@ into architecture that holds tests, and putting AI agents to real work in a deli
   item("AI work platform")[Replaced spreadsheet-based task tracking with a local platform: ASP.NET Core (.NET 10), Blazor WASM PWA, MongoDB, an own MCP server exposing 13 tools, and n8n orchestration with a custom node for agent steps. MVP in a single session at 41/41 unit tests, verified by a task running the full pipeline end to end.],
   item("RAG assistant for university applicants")[Took a retrieval assistant from nothing to a deployed service in 10 days: a 700-chunk corpus over two domains, Chroma with fastembed, and an LLM relevance judge that replaced a brittle 0.52 similarity threshold; deployed under systemd after Docker hit OOM on a 961 MB host.],
   item("Conversation-practice Telegram bot")[Runs in production with analytics built from scratch: 0 #sym.arrow 374 events over 35 days from 12 users, 88% dialogue completion, 295 passing tests.],
-  item("Prime World open source")[Published the codebase of a 2014 MOBA: audited component licences and purged proprietary vendor SDKs from the entire git history rather than the current tree #sym.dash.en #link("https://github.com/kimsanbaev-karim/Prime-World")[github.com/kimsanbaev-karim/Prime-World].],
-  item("Shipped titles")[#link("https://apps.apple.com/us/app/mutiny-pirate-survival-rpg/id1490838880")[Mutiny: Pirate Survival], #link("https://heliogames.com/westland-survival")[Westland Survival], #link("https://apps.apple.com/us/app/amikin-village-magic-sim-rpg/id6478102304")[Amikin Village], #link("https://store.steampowered.com/app/235340/Prime_World/")[Prime World], #link("https://store.steampowered.com/app/429540/Prime_World_Defenders_2/")[Prime World: Defenders 2].],
+  item("Prime World open source")[Published the codebase of a 2014 MOBA: audited component licences and purged proprietary vendor SDKs from the entire git history rather than the current tree #sym.dash.en github.com/kimsanbaev-karim/Prime-World.],
+  item("Shipped titles")[Mutiny: Pirate Survival, Westland Survival, Amikin Village, Prime World, Prime World: Defenders 2.],
+)
+
+#rule-section("Skills")
+
+#grid(
+  columns: (auto, 1fr),
+  row-gutter: 3pt,
+  column-gutter: 8pt,
+  strong[Languages], [C\#, Python, SQL],
+  strong[Game], [Unity, DoTween, Unity IAP, NoesisGUI, asset pipelines, IL2CPP],
+  strong[Backend], [ASP.NET Core, Blazor, MagicOnion/gRPC, MongoDB, .NET Aspire, Docker],
+  strong[AI tooling], [Claude Code agents, MCP servers, RAG, n8n],
 )
 
 #rule-section("Education")
@@ -95,15 +108,3 @@ into architecture that holds tests, and putting AI agents to real work in a deli
 
 #v(3pt)
 Paper on methods for assessing situation-recognition quality accepted for publication (2027).
-
-#rule-section("Skills")
-
-#grid(
-  columns: (auto, 1fr),
-  row-gutter: 3pt,
-  column-gutter: 8pt,
-  strong[Languages], [C\#, Python, SQL],
-  strong[Game], [Unity, DoTween, Unity IAP, NoesisGUI, asset pipelines, IL2CPP],
-  strong[Backend], [ASP.NET Core, Blazor, MagicOnion/gRPC, MongoDB, .NET Aspire, Docker],
-  strong[AI tooling], [Claude Code agents, MCP servers, RAG, n8n],
-)
