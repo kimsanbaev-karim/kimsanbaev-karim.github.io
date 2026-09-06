@@ -50,12 +50,12 @@ pipeline.
 )
 #list(
   spacing: 5pt,
-  item("Legacy engine migration")[Moved a live Unity client from 2017 to Unity 6.3 across six LTS steps, each closed by a tagged checkpoint and verified by compile, a 5v5 match, a standalone build and asset bundles; included working around a Unity 6 VideoPlayer defect that left the first playback frozen for nine seconds.],
+  item("Legacy engine migration")[Moved a live Unity client from 2017 to Unity 6.3 across six LTS steps without pausing the product. Each step closed by a tagged checkpoint and verified by compile, a 5v5 match, a standalone build and asset bundles.],
   item("Prototype to production architecture")[Restructured a 343-file game mode into layered assemblies: tests 98 #sym.arrow 289 EditMode plus 14 PlayMode end-to-end, ScriptableObject configs 29 #sym.arrow 0 (JSON-driven), mutable statics 9 #sym.arrow 0 (DI registry), the largest system 1665 #sym.arrow 780 LOC. Chose in-place refactoring after a full rewrite attempt proved slower.],
   item("Game meta backend from scratch")[Built the meta service on MagicOnion StreamingHub, MongoDB and .NET Aspire: JWT access and refresh with only token hashes stored, Steam as an auth provider, role-based access, heartbeat with automatic reconnect, and packet-loss measurement under load.],
-  item("Production incident diagnosis")[Traced a live DDoS through 46 client sessions and 2 crash dumps to its amplification root in the RUDP layer (an O(n) scan per unknown packet plus per-packet logging), removed both behind a failover flag and counters, and covered the change with 5 regression tests.],
-  item("Feature delivery and platforms")[Shipped 15+ features including a battle pass across several projects; integrated Firebase, AppsFlyer, Pushwoosh, Unity IAP and Xsolla; cut memory use 30% and CPU 20% via allocation-free patterns.],
-  item("Mentoring")[Guided a mid-level programmer through their probation period, and trained the team to write allocation-free code, documenting the asset workflow pipeline they follow.],
+  item("Production incident diagnosis")[Traced a live DDoS to its amplification root in the RUDP layer through 46 client sessions and 2 crash dumps. Removed an O(n) scan per unknown packet and per-packet logging behind a failover flag, covered by 5 regression tests.],
+  item("Feature delivery and platforms")[Cut memory use 30% and CPU 20% with allocation-free patterns. Shipped 15+ features including a battle pass, integrating Firebase, AppsFlyer, Pushwoosh, Unity IAP and Xsolla.],
+  item("Mentoring")[Took a mid-level programmer through probation, and moved the team to allocation-free code with a documented asset workflow they still follow.],
 )
 
 #subheading(
