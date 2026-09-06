@@ -29,7 +29,7 @@
   row-gutter: 4pt,
   text(size: 15pt, weight: "bold")[Карим Кимсанбаев],
   [#link("mailto:karim.kimsanbaev@gmail.com")[karim.kimsanbaev\@gmail.com] · Telegram #link("https://t.me/KarimGood")[\@KarimGood]],
-  text(size: 11pt)[Senior-инженер Unity и .NET · Бишкек, Кыргызстан],
+  text(size: 11pt)[Senior-инженер Unity и .NET],
   [#link("https://www.linkedin.com/in/karim-kimsanbaev-013851203/")[linkedin.com/in/karim-kimsanbaev] · #link("https://github.com/kimsanbaev-karim")[github.com/kimsanbaev-karim]],
   link("https://kimsanbaev-karim.github.io/ru.html")[kimsanbaev-karim.github.io],
   [],
@@ -74,7 +74,7 @@
   item("Платформа управления ИИ-работой")[Заменил учёт задач в таблице локальной платформой: ASP.NET Core (.NET 10), Blazor WASM PWA, MongoDB, собственный MCP-сервер на 13 инструментов и оркестрация в n8n со своей нодой для шагов агента. MVP за одну сессию при 41/41 юнит-тестов, подтверждено задачей, прошедшей весь конвейер целиком.],
   item("RAG-помощник для абитуриентов")[С нуля до задеплоенного сервиса за 10 дней: корпус на 700 чанков по двум доменам, Chroma с fastembed и LLM-судья релевантности вместо хрупкого порога 0,52; деплой под systemd после того, как Docker упал по OOM на машине с 961 МБ памяти.],
   item("Telegram-бот тренировки общения")[Работает в проде, аналитика построена с нуля: 0 #sym.arrow 374 события за 35 дней от 12 пользователей, завершаемость диалогов 88%, 295 проходящих тестов.],
-  item("Prime World в опенсорсе")[Опубликовал кодовую базу MOBA 2014 года: проверил лицензии компонентов и вычистил проприетарные вендорские SDK из всей истории git, а не только из текущего состояния #sym.dash.en github.com/kimsanbaev-karim/Prime-World.],
+  item("Prime World в опенсорсе")[Первый контрибьютор публикации, 19 коммитов из 25: проверил лицензии и вычистил проприетарные вендорские SDK из всей истории git, а не только из текущего состояния #sym.dash.en github.com/nival/Prime-World.],
   item("Выпущенные проекты")[Mutiny: Pirate Survival, Westland Survival, Amikin Village, Prime World, Prime World: Defenders 2.],
 )
 

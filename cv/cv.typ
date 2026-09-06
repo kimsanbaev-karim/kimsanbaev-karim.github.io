@@ -29,7 +29,7 @@
   row-gutter: 4pt,
   text(size: 15pt, weight: "bold")[Karim Kimsanbaev],
   [#link("mailto:karim.kimsanbaev@gmail.com")[karim.kimsanbaev\@gmail.com] · Telegram #link("https://t.me/KarimGood")[\@KarimGood]],
-  text(size: 11pt)[Senior Unity & .NET Engineer · Bishkek, Kyrgyzstan],
+  text(size: 11pt)[Senior Unity & .NET Engineer],
   [#link("https://www.linkedin.com/in/karim-kimsanbaev-013851203/")[linkedin.com/in/karim-kimsanbaev] · #link("https://github.com/kimsanbaev-karim")[github.com/kimsanbaev-karim]],
   link("https://kimsanbaev-karim.github.io")[kimsanbaev-karim.github.io],
   [],
@@ -75,7 +75,7 @@ pipeline.
   item("AI work platform")[Replaced spreadsheet-based task tracking with a local platform: ASP.NET Core (.NET 10), Blazor WASM PWA, MongoDB, an own MCP server exposing 13 tools, and n8n orchestration with a custom node for agent steps. MVP in a single session at 41/41 unit tests, verified by a task running the full pipeline end to end.],
   item("RAG assistant for university applicants")[Took a retrieval assistant from nothing to a deployed service in 10 days: a 700-chunk corpus over two domains, Chroma with fastembed, and an LLM relevance judge that replaced a brittle 0.52 similarity threshold; deployed under systemd after Docker hit OOM on a 961 MB host.],
   item("Conversation-practice Telegram bot")[Runs in production with analytics built from scratch: 0 #sym.arrow 374 events over 35 days from 12 users, 88% dialogue completion, 295 passing tests.],
-  item("Prime World open source")[Published the codebase of a 2014 MOBA: audited component licences and purged proprietary vendor SDKs from the entire git history rather than the current tree #sym.dash.en github.com/kimsanbaev-karim/Prime-World.],
+  item("Prime World open source")[Top contributor of the public release, 19 of its 25 commits: audited licences and purged proprietary vendor SDKs from the entire git history, not just the current tree #sym.dash.en github.com/nival/Prime-World.],
   item("Shipped titles")[Mutiny: Pirate Survival, Westland Survival, Amikin Village, Prime World, Prime World: Defenders 2.],
 )
 
